@@ -10,6 +10,7 @@ package cit360;
 public class TER {
     public TER(){
     System.out.println("\n////////////////////////////////////////////\n"
+                      + "////////////////////////////////////////////\n"
                       + "Threads, Executors, and Runnables Class"
                       + "\n////////////////////////////////////////////\n");
    }

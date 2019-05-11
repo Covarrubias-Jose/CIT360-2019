@@ -44,7 +44,8 @@ public class Collections {
         System.out.println();}
 ////////////////////////////////////////////////////////////////////////////////
         /*              COLLECTION LIST         */
-       System.out.print("\n**///////// Collections LIST ///////////////////**");       
+       System.out.print("\n////////////////////////////////////////////\n"
+                       + "**///////// Collections LIST ///////////////////**");       
        /*Different from regular arrays, collections can be a lot more simple
          and complex at the same time. For example a List can hava duplicates
          of the data in it as long is the same type of data. 
@@ -70,7 +71,8 @@ public class Collections {
         but they cannot repeat. This could be helpful whe working with arrays
         that require that data is enter only once. 
         */
-        System.out.print("\n**//////////// Collection SET /////////////////**\n"); 
+        System.out.print("\n////////////////////////////////////////////\n"
+                        + "**//////////// Collection SET /////////////////**\n"); 
         Set colSet = new HashSet(); //creates a new object of SET
         colSet.add(2);
         colSet.add("bike");
@@ -96,7 +98,8 @@ public class Collections {
         /*             COLLECTION TREESET
         The TREESET is a collction that can sort the array for you. data has
         to be of the same type. Duplicates will not show. */
-        System.out.println("\n**////////// NOW USING THE TREESET //////////**");
+        System.out.println("\n////////////////////////////////////////////\n"
+                          +"**////////// NOW USING THE TREESET //////////**");
         TreeSet sortItForMe = new TreeSet();
             sortItForMe.add(305);
             sortItForMe.add(303);
@@ -112,7 +115,8 @@ public class Collections {
         need 2 sets of information. However, it does not take duplicate key 
         values, but it does on the second parameter value.
         */
-        System.out.println("\n**//////////// NOW USING THE MAP ////////////**");
+        System.out.println("\n////////////////////////////////////////////\n"
+                          + "**//////////// NOW USING THE MAP ////////////**");
         Map raceCarNum = new HashMap();
             raceCarNum.put("blue","1");
             raceCarNum.put("red","5");
@@ -136,7 +140,8 @@ public class Collections {
         www.geeksforgeeks.org "Typically order elements in FIFO 
         (first-in-first-out) order except exceptions like PriorityQueue."
         */
-        System.out.println("\n**//////////// NOW USING QUEUE ////////////**");
+        System.out.println("\n////////////////////////////////////////////\n"
+                          + "**//////////// NOW USING QUEUE ////////////**");
         Queue<String> myQueue = new LinkedList<>();
         myQueue.add("one");
         myQueue.add("two");
