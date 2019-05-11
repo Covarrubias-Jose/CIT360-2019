@@ -11,6 +11,10 @@ public class CIT360 {
     public static void main(String[] args) {
         Collections MyCollections = new Collections();
         System.out.println(MyCollections);
+        
+        //this calls the Threads, Executors, and Runnables (TER) class.
+        TER MyTER = new TER();
+        System.out.println(MyTER);
     }
     
 }
