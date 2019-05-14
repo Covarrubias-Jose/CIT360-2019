@@ -13,31 +13,38 @@ public class CIT360 {
      */
     public static void main(String[] args) {
         System.out.println("This Java program will prompt you to enter a "
-        + "number to select a topic to be displayed.");
+                          + "number to select a topic to be displayed.\n");
+        
+        System.out.println("Please enter a number: ");
         
         Scanner userInput = new Scanner(System.in);
-        String selection = userInput.nextLine();
+        int selection = userInput.nextInt();
         
-        while (selection == null){
+        while (selection < 1){ 
+            
+            System.out.println("You must enter a number: ");
+            selection = userInput.nextInt();
+        }
+        
         switch (selection){
-            case "1":
-                System.out.println("that was 1");
+            case 1:
+                //this calls the Collections class.
+                Collections MyCollections = new Collections();
+                System.out.println(MyCollections);
                 break;
-            case "2":
-                System.out.println("that was 2");
+            case 2:
+                //this calls the Threads, Executors, and Runnables (TER) class.
+                TER MyTER = new TER();
+                System.out.println(MyTER);
                 break;
             default:
-                System.out.println("This time select something");
-        }
-        }
+                System.out.println("Next time select something from the list.");
+            }
         
-        //this calls the Collections class.
-        //Collections MyCollections = new Collections();
-        //System.out.println(MyCollections);
         
-        //this calls the Threads, Executors, and Runnables (TER) class.
-       // TER MyTER = new TER();
-        //System.out.println(MyTER);
-    }
-    
-}
+        }
+}    
+        
+        
+       
+ 
