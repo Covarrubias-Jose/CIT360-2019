@@ -19,7 +19,7 @@ import java.util.TreeSet;
  */
 public class Collections {
     public Collections(){
-    System.out.println("**///////// A regular array in Java ///////////**"); 
+    System.out.println("============== A regular array in Java =============="); 
     //let's create an commun array in Java name regArray
     int[] regArray;
     //we need to give the array the number of elements/items it will have
@@ -40,8 +40,8 @@ public class Collections {
     System.out.println();}
 ////////////////////////////////////////////////////////////////////////////////
     /*              COLLECTION LIST         */
-   System.out.print("\n////////////////////////////////////////////\n"
-                   + "**///////// Collections LIST ///////////////////**");       
+   System.out.print("\n======================================================\n"
+                   + "==================== Collections LIST =================");       
    /*Different from regular arrays, collections can be a lot more simple
      and complex at the same time. For example a List can hava duplicates
      of the data in it as long is the same type of data. 
@@ -67,8 +67,8 @@ public class Collections {
     but they cannot repeat. This could be helpful whe working with arrays
     that require that data is enter only once. 
     */
-    System.out.print("\n////////////////////////////////////////////\n"
-                    + "**//////////// Collection SET /////////////////**\n"); 
+    System.out.print("\n=====================================================\n"
+                    + "==================== Collection SET ================\n"); 
     Set colSet = new HashSet(); //creates a new object of SET
     colSet.add(2);              //the next 3 lines populate the SET
     colSet.add("bike");
@@ -77,7 +77,7 @@ public class Collections {
     System.out.println(colSet); //display the SET
     System.out.println("#of index "+colSet.size()); //counts the items in the SET
     System.out.println();
-    System.out.println("/////// same colSet array with ITERATOR /////////");
+    System.out.println("========== same colSet array with ITERATOR ==========");
     Iterator colIterator = colSet.iterator();
     while(colIterator.hasNext()){
             Object data = colIterator.next();
@@ -94,8 +94,8 @@ public class Collections {
     /*             COLLECTION TREESET
     The TREESET is a collction that can sort the array for you. data has
     to be of the same type. Duplicates will not show. */
-    System.out.println("\n////////////////////////////////////////////\n"
-                      +"**////////// NOW USING THE TREESET //////////**");
+    System.out.println("\n===================================================\n"
+                      +"=============== NOW USING THE TREESET ===============");
     TreeSet sortItForMe = new TreeSet();
         sortItForMe.add(305);
         sortItForMe.add(303);
@@ -111,8 +111,8 @@ public class Collections {
     need 2 sets of information. However, it does not take duplicate key 
     values, but it does on the second parameter value.
     */
-    System.out.println("\n////////////////////////////////////////////\n"
-                      + "**//////////// NOW USING THE MAP ////////////**");
+    System.out.println("\n===================================================\n"
+                      + "================= NOW USING THE MAP ================");
     Map raceCarNum = new HashMap();
         raceCarNum.put("blue","1");
         raceCarNum.put("red","5");
@@ -136,8 +136,8 @@ public class Collections {
     www.geeksforgeeks.org "Typically order elements in FIFO 
     (first-in-first-out) order except exceptions like PriorityQueue."
     */
-    System.out.println("\n////////////////////////////////////////////\n"
-                      + "**//////////// NOW USING QUEUE ////////////**");
+    System.out.println("\n===================================================\n"
+                      + "==================== NOW USING QUEUE ===============");
     Queue<String> myQueue = new LinkedList<>();
     myQueue.add("one");
     myQueue.add("two");
