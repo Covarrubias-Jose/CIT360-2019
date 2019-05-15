@@ -59,7 +59,7 @@ public class Collections {
     // sort the list.
     Comparator sortStuff = null;
     stuff.sort(sortStuff); 
-    System.out.println("was the new value added? "+stuff.add("car6"));
+    System.out.println("was the new value \"car6\" added? "+stuff.add("car6"));
     System.out.println(stuff);
 ////////////////////////////////////////////////////////////////////////////////
     /*              COLLECTION SET 
@@ -159,7 +159,7 @@ public class Collections {
                           + myQueue.remove()// removes the value 
                           + " from the queue.");
 
-    System.out.println("My QUEUE now contains = " + myQueue);
+    System.out.println("My QUEUE now contains = " + myQueue + "\n");
 
     } 
 }
