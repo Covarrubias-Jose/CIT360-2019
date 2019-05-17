@@ -10,17 +10,31 @@ public class CIT360 {
 
     /**
      * @param args the command line arguments
+     * @throws java.lang.Exception
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         System.out.println("This Java program will prompt you to enter a "
                           + "number to select a topic to be displayed.\n");
+        //Print the list of topics to choose from. 
+        System.out.println("================================================\n"+
+                           "1.-Java Collections\n" +
+                           "2.-Threads, Executors, and Runnables\n" +
+                           "3.-Application Controller Pattern\n" +
+                           "4.-MVC\n" +
+                           "5.-Hibernate\n" +
+                           "6.-QCJSON and JSON\n" +
+                           "7.-Android HttpUrlConnection\n" +
+                           "8.-Servlets\n" +
+                           "9.-JUnit Tests\n" +
+                           "10.-System Level Tests\n" +
+                           "================================================");
         
         System.out.println("Please enter a number: ");
         
         Scanner userInput = new Scanner(System.in);
         int selection = userInput.nextInt();
         
-        while (selection < 1){ 
+        while (selection < 1){ //repeat the prompt if no # was entered 
             
             System.out.println("You must enter a number: ");
             selection = userInput.nextInt();
@@ -34,8 +48,8 @@ public class CIT360 {
                 break;
             case 2:
                 //this calls the Threads, Executors, and Runnables (TER) class.
-                TER MyTER = new TER();
-                System.out.println(MyTER);
+                TER MyTER = new TER(); 
+                System.out.println(MyTER); 
                 break;
             default:
                 System.out.println("Next time select something from the list.");
