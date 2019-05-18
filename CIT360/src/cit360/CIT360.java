@@ -30,33 +30,37 @@ public class CIT360 {
                            "================================================");
         
         System.out.println("Please enter a number: ");
-        
+//        
         Scanner userInput = new Scanner(System.in);
-        int selection = userInput.nextInt();
+        String selection = userInput.nextLine();
         
-        while (selection < 1){ //repeat the prompt if no # was entered 
+        while (selection.isEmpty()){ //repeat the prompt if no # was entered 
             
             System.out.println("You must enter a number: ");
-            selection = userInput.nextInt();
+            selection = userInput.nextLine();
         }
-        
+        if (selection.equals("0")){
+        System.out.println("You must enter a number grater thatn 0: ");
+            selection = userInput.nextLine();
+        }
         switch (selection){
-            case 1:
+            case "1":
                 //this calls the Collections class.
                 Collections MyCollections = new Collections();
                 System.out.println(MyCollections);
                 break;
-            case 2:
+            case "2":
                 //this calls the Threads, Executors, and Runnables (TER) class.
                 TER MyTER = new TER(); 
                 System.out.println(MyTER); 
                 break;
             default:
                 System.out.println("Next time select something from the list.");
+                
             }
+          
         
-        
-        }
+    }
 }    
         
         
