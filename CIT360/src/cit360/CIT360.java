@@ -40,7 +40,7 @@ public class CIT360 {
             selection = userInput.nextLine();
         }
         if (selection.equals("0")){
-        System.out.println("You must enter a number grater thatn 0: ");
+        System.out.println("You must enter a number greater than 0: "); 
             selection = userInput.nextLine();
         }
         switch (selection){
