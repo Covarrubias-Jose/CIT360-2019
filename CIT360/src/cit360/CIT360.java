@@ -13,7 +13,7 @@ public class CIT360 {
      * @throws java.lang.Exception
      */
     public static void main(String[] args) throws Exception {
-        System.out.println("This Java program will prompt you to enter a "
+        System.out.println("This Java program will prompt you to enter a \n"
                           + "number to select a topic to be displayed.\n");
         //Print the list of topics to choose from. 
         System.out.println("================================================\n"+
