@@ -54,6 +54,12 @@ public class CIT360 {
                 TER MyTER = new TER(); 
                 System.out.println(MyTER); 
                 break;
+            case "3":
+                //this calls the Application Controller pattern classes
+                //creating a thread.
+                AppConPattern MyACP = new AppConPattern();
+                MyACP.run();
+                break;
             default:
                 System.out.println("Next time select something from the list.");
                 
