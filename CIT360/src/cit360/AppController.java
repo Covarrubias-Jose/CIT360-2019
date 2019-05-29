@@ -12,9 +12,18 @@ import java.util.HashMap;
  * @author josecovarrubias
  */
 public class AppController {
-    public AppController(){
-        HashMap<String, String> contactMap = new HashMap<String, String>();
+    //public AppController(){
+        HashMap<String, String> contactMap = new HashMap(); 
         
+        //save contact
+        public void saveContact(String cName, String cNumber){
+            
+        }
         
-    }   
+        //lookup contact
+        public void lookupContact(){
+            
+        }
+        
+    //}   
 }

@@ -58,7 +58,7 @@ public class CIT360 {
                 //this calls the Application Controller pattern classes
                 //creating a thread.
                 AppConPattern MyACP = new AppConPattern();
-                MyACP.run();
+                MyACP.start();
                 break;
             default:
                 System.out.println("Next time select something from the list.");
