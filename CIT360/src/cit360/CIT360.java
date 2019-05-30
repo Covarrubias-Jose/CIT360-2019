@@ -39,7 +39,7 @@ public class CIT360 {
             System.out.println("You must enter a number: ");
             selection = userInput.nextLine();
         }
-        if (selection.equals("0")){
+        while (selection.equals("0")){
         System.out.println("You must enter a number greater than 0: "); 
             selection = userInput.nextLine();
         }
@@ -59,6 +59,10 @@ public class CIT360 {
                 //creating a thread.
                 AppConPattern MyACP = new AppConPattern();
                 MyACP.start();
+                break;
+            case "4":
+                UsingMVC showMVC = new UsingMVC();
+                showMVC.run();
                 break;
             default:
                 System.out.println("Next time select something from the list.");
