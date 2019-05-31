@@ -62,7 +62,7 @@ public class CIT360 {
                 break;
             case "4":
                 UsingMVC showMVC = new UsingMVC();
-                showMVC.run();
+                showMVC.UsingMVC();
                 break;
             default:
                 System.out.println("Next time select something from the list.");
