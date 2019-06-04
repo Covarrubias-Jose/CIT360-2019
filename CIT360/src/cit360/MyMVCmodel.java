@@ -13,17 +13,17 @@ import java.util.HashMap;
 public class MyMVCmodel {
     HashMap<String, String> contactHashmap = new HashMap();
     
-    //save the contact information in a pair value HashMap.
+    //Saves the contact information in a pair value HashMap.
     public void saveContactInfo(String name, String number){
         contactHashmap.put(name, number);
     }
     
-    //get the contact information.
-    public String getContactInfo(String name){
-        String info;
-        info = contactHashmap.get(name);
-        return info;
-     
+    //Gets the contact information.
+    public String getContactInfo(String number){
+        String info;                       //The get.() obtains the value of 
+        info = contactHashmap.get(number); // the key, in this case the number
+        return info;                       // we are looking for.
+                                           
     }
    
 }

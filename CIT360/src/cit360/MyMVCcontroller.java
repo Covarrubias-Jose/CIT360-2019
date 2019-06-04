@@ -12,21 +12,23 @@ public class MyMVCcontroller{
     
    
     public void MyMVCcontroller(){
-        //Create Object of the VIEW.
+        //Creates Object of the VIEW.
         MyMVCview ContactNew = new MyMVCview();
 
-        //This instance is to display the welcome message.
+        //Calls the method in the VIEW to create the welcome message.
         ContactNew.WelcomeMessage();
-
+       
+        //Calls the method in the VIEW to create a contact.
         ContactNew.createContact();
         
-        //create object of the MODEL.
+        //Creates object of the MODEL.
         MyMVCmodel callingModel = new MyMVCmodel();
         
-        //use the method of the MODEL to save the data.
+        // Uses the method of the MODEL to save the data. The name and number
+        // are sent as parameters extracted from the VIEW 
         callingModel.saveContactInfo(ContactNew.Cname(), ContactNew.Cnumber());
         
-        //use the method of the MODEL to get info from the HASHMAP.
+        //Uses the method of the MODEL to get info from the HASHMAP.
         String info = callingModel.getContactInfo(ContactNew.lookupContact());
         
         ContactNew.showMyContact(info);
