@@ -1,8 +1,6 @@
 
 package cit360;
 
-import java.util.Scanner;
-
 /*
  * @author Jose Covarrubias
  *
@@ -14,19 +12,9 @@ public class AppConPattern extends Thread{
         public void run(){ 
         //display instructions for the user.
         System.out.println("=================================================\n" 
-                          + "Populate your contacts book by entering \n"
-                          + "a name and a phone number: \n"
+                          + "Select to save a contact or to lookup a name. \n"
                           + "================================================");
         
-        //prompt for name
-        System.out.println("Name: ");
-        Scanner contactInfo = new Scanner(System.in);
-        String nameInput = contactInfo.nextLine();
-        
-        //prompt for the phone number
-        System.out.println("Phone number: ");
-        String phone = contactInfo.nextLine();
-        
-        
+        AppController callAPC = new AppController();
     }
 }

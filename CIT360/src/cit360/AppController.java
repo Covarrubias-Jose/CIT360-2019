@@ -12,18 +12,23 @@ import java.util.HashMap;
  * @author josecovarrubias
  */
 public class AppController {
-    //public AppController(){
-        HashMap<String, String> contactMap = new HashMap(); 
+    
+    private HashMap<String, Handler> contactMap;
+    
+    public AppController(){
+        //the next three lines create and populate the HashMap
+        contactMap = new HashMap<String, Handler>();
+        contactMap.put("save", new addContactHandler());
+        contactMap.put("lookup", new lookupContactHandler());
+    }
+    
+    public Object doCommand(String commandName, HashMap<String, Object> commandData) throws Exception{
         
-        //save contact
-        public void saveContact(String cName, String cNumber){
-            
+        Handler command = contactMap.getOrDefault(commandName, null);
+        if (command == null){
+            throw new Exception("AppController class message " + commandName);
         }
         
-        //lookup contact
-        public void lookupContact(){
-            
-        }
-        
-    //}   
+        return command.handleIt(commandData); 
+    }
 }
