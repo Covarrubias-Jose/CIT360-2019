@@ -28,6 +28,7 @@ public class addContactHandler implements Handler {
         //prompt for the phone number
         System.out.println("Phone number: ");
         String phone = contactInfo.nextLine(); 
-        return null; 
+        
+        return data;  
     }
 }

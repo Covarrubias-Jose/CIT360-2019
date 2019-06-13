@@ -16,7 +16,8 @@ public class AppController {
     private HashMap<String, Handler> contactMap;
     
     public AppController(){
-        //the next three lines create and populate the HashMap
+        // The next three lines create and populate the HashMap each time there 
+        // is an object created.
         contactMap = new HashMap<String, Handler>();
         contactMap.put("save", new addContactHandler());
         contactMap.put("lookup", new lookupContactHandler());
