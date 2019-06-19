@@ -22,4 +22,15 @@ public class ToChristmas {
         // Returns the result of the above logic.
         return monthsToChristmas;
 	}
+    
+    // Just a simple method to showcase the assertNull.
+    public String countWithString(){
+        String justANull = null;
+        return justANull; 
+    }
+    
+    public String[] ChristmasMonth(){
+        String[] DecMonth = {"Christmas"," is", " in", " December."};
+        return DecMonth; 
+    }
 }
