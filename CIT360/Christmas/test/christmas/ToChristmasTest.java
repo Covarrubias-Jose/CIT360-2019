@@ -122,8 +122,10 @@ public class ToChristmasTest {
         //Pass the test because the condition is true.
         assertArrayEquals(expResult9, result9);
         System.out.println("Expected Result \n" 
+                          //convert array to string and remove the coma.
                           + Arrays.toString(expResult9).replace(",", "")
                           + "\n= assertArrayEquals\n" 
+                          //convert array to string and remove the coma. 
                           + Arrays.toString(result9).replace(",", ""));
     }
     
